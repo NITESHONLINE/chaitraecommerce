@@ -1,15 +1,15 @@
 import { Route, Routes } from 'react-router'
 import './App.css'
-import Home from './pages/Home'
-import AddProduct from './pages/AddProduct'
+import Home from './pages/Home' 
+import ProductView from './pages/ProductView'
 
 function App() { 
 
   return (
     <> 
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/addproduct' element={<AddProduct/>} />
+        <Route path='/' element={<Home/>} /> 
+        <Route path='/:id' element={<ProductView/>} />
       </Routes> 
     </>
   )
